@@ -222,8 +222,12 @@ body {
 /* Destination */
 .destination {
     margin-top: 100px;
+    justify-items: center;
 }
-
+.destination-description{
+    max-width: 643px;
+    height: 126px;
+}
 .destination-heading {
     font-size: 40px;
     font-weight: 800;
@@ -235,61 +239,37 @@ body {
 .destination-para {
     color: var(--light-black);
     text-align: center;
+    line-height: 26px;
 }
 
 .imgage-collage {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.destination-image-row1,
+.destination-image-row2,
+.destination-image-row3 {
+    display: flex;
     gap: 24px;
 }
 
-.destination-image1 {
-    background-image: url('../Images/Rectangle\ 5.png');
-    grid-column:  1 / span 6;
+.destination-image {
+    position: relative;
+    width: 100%;
 }
 
-.destination-image2 {
-    background-image: url('../Images/Rectangle\ 8.png');
-    grid-column:  7 / span 12;
-}
-
-.destination-image3 {
-    background-image: url('../Images/Rectangle\ 6.png');
-    grid-column: 1 / span 4;
-}
-
-.destination-image4 {
-    background-image: url('../Images/Rectangle\ 7.png');
-    grid-column: 5 / span 8;
-}
-
-.destination-image5 {
-    background-image: url('../Images/Rectangle\ 9.png');
-     grid-column: 9 / span 12;
-}
-
-.destination-image6 {
-    background-image: url('../Images/Rectangle\ 11.png');
-    grid-column: 1 / span 5;
-}
-
-.destination-image7 {
-    background-image: url('../Images/Rectangle\ 10.png');
-    grid-column: 6 / span 12;
-}
-.destination-image1,
-.destination-image2,
-.destination-image3,
-.destination-image4,
-.destination-image5,
-.destination-image6,
-.destination-image7 {
-  width: 100%;
-  height: 300px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px; /* optional */
-  background-repeat: no-repeat;
+.destination-image>h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: white;
 }
 
 
@@ -381,6 +361,42 @@ body {
     .popular-tours-para2 {
         margin-bottom: 24px;
         line-height: 24px;
+    }
+
+    /* Destination */
+    .destination {
+        margin-top: 24px;
+    }
+    .destination-heading {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .destination-para {
+        line-height: 24px;
+        
+    }
+    .imgage-collage {
+        gap: 16px;
+        margin-top: 16px;
+    }
+    .destination-image-row1,
+    .destination-image-row2,
+    .destination-image-row3 {
+        gap: 16px;
+        flex-direction: column;
+    }
+    .destination-image{
+        height: 176px;
+    }
+    .destination-image > img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .destination-image>h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
     }
 
 }
