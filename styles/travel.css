@@ -490,6 +490,73 @@ body {
     margin-bottom: 16px;
 }
 
+/* last-of-main */
+.last-of-main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.newesletter{
+    max-width: 474px;
+    max-height: 422px;
+    padding: 40px;
+    border: 1px solid var(--orange);
+    border-radius: 16px;
+}
+.newsletter-heading{
+    font-size: 24px;
+    font-weight: 800;
+    color: #131318;
+    margin-bottom: 16px;
+}
+
+.newsletter-para{
+    color: #5A5A5D;
+    margin-bottom: 24px;
+    line-height: 26px;
+}
+hr{
+    margin-bottom: 24px;
+    color: rgba(19, 19, 24, 0.1);
+    margin-right: 1px;
+}
+.enter-name-email{
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 52px;
+    border: none;
+    background-color: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.3);
+    padding: 16px 16px 16px 20px;
+    border-radius: 8px;
+}
+#subscribe{
+    width: 100%;
+    margin-top: 8px;
+    height: 52px;
+}
+.save-money{
+    position: relative;
+}
+.save-money-btn{
+    position: absolute;
+    bottom: 55px;
+    right: 5px;
+    padding: 23px 40px;
+    background-color: rgba(255, 84, 0, 1);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 16px;
+    margin-left: auto;
+    transform: rotate(-19.63deg);
+}
+.save-money-btn > span{
+    font-size: 32px;
+    font-weight: 800;
+} 
+
 @media screen and (max-width: 576px) {
     body {
         padding-top: 20px;
